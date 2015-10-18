@@ -50,6 +50,7 @@
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreACalceusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teclasDeAtalhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
             this.produtoToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.produtoToolStripMenuItem.Text = "Produto";
+            this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
             // 
             // cadastrarToolStripMenuItem
             // 
@@ -126,6 +128,7 @@
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
             this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
+            this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
             // cadastrarToolStripMenuItem1
             // 
@@ -200,7 +203,8 @@
             // 
             this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreOSistemaToolStripMenuItem,
-            this.sobreACalceusToolStripMenuItem});
+            this.sobreACalceusToolStripMenuItem,
+            this.teclasDeAtalhoToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
@@ -217,6 +221,12 @@
             this.sobreACalceusToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.sobreACalceusToolStripMenuItem.Text = "Sobre a Calceus";
             // 
+            // teclasDeAtalhoToolStripMenuItem
+            // 
+            this.teclasDeAtalhoToolStripMenuItem.Name = "teclasDeAtalhoToolStripMenuItem";
+            this.teclasDeAtalhoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.teclasDeAtalhoToolStripMenuItem.Text = "Teclas de Atalho";
+            // 
             // Gerenciador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +236,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Gerenciador";
             this.Text = "Gerenciador";
+            this.Load += new System.EventHandler(this.Gerenciador_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -257,6 +268,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultarPromoçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarSolicitaçõesDeDevoluçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarFuncionárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teclasDeAtalhoToolStripMenuItem;
     }
 }
 

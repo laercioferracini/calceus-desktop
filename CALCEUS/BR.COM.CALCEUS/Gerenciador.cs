@@ -21,5 +21,21 @@ namespace BR.COM.CALCEUS
         {
 
         }
+
+        private void Gerenciador_Load(object sender, EventArgs e)
+        {
+            //New branch desenvolvimento
+
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
