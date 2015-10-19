@@ -35,7 +35,7 @@ namespace BR.COM.CALCEUS
 
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            // novo branch Desenvolvimento
         }
     }
 }
